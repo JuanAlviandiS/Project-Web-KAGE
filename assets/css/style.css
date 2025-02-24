@@ -1,0 +1,243 @@
+/* Mengimpor font eksternal Cabinet Grotesk */
+@import url(../css/cabinet-grotesk.css);
+
+/* Mengatur tampilan dasar untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif; /* Menggunakan font Arial sebagai default, dengan sans-serif sebagai cadangan */
+    line-height: 1.7; /* Menentukan tinggi baris agar teks lebih mudah dibaca */
+    color: var(--c-body); /* Menggunakan warna teks dari variabel CSS yang didefinisikan sebelumnya */
+}
+
+/* Styling untuk bagian utama (hero section) */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?technology,ai') no-repeat center center/cover;
+    /* Menetapkan gambar latar belakang dengan teknologi AI, tidak diulang, dan dipusatkan */
+    height: 100vh; /* Mengatur tinggi elemen agar penuh sesuai dengan tinggi viewport */
+    display: flex; /* Menggunakan flexbox agar elemen dapat ditata lebih mudah */
+    align-items: center; /* Menengahkan elemen secara vertikal */
+    justify-content: center; /* Menengahkan elemen secara horizontal */
+    color: white; /* Mengatur warna teks menjadi putih agar kontras dengan background */
+}
+
+.hero h1 {
+    font-size: 3rem; /* Bisa diubah sesuai kebutuhan */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* Memberikan efek overlay dengan gradasi warna */
+.overlay {
+    background: linear-gradient(135deg, #13005A, #4CACBC); /* Warna gradasi dari biru tua ke biru muda */
+    width: 100%; /* Lebar penuh */
+    height: 100%; /* Tinggi penuh */
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    align-items: center; /* Menengahkan konten secara vertikal */
+    justify-content: center; /* Menengahkan konten secara horizontal */
+    text-align: center; /* Menengahkan teks */
+}
+
+.btn-light {
+    padding: 12px 24px; /* Tambah padding agar lebih lebar */
+    border-radius: 50px; /* Kurangi border radius agar lebih kotak */
+    font-size: 16px; /* Sesuaikan ukuran teks */
+    font-weight: bold; /* Biar lebih menonjol */
+    width: auto; /* Lebar otomatis sesuai teks */
+    min-width: 160px; /* Tambah batas minimal lebar */
+    padding: 11px 30px; /* Perbesar padding */
+}
+
+
+/* Styling untuk tombol WhatsApp */
+.whatsapp-button {
+    background: #4B61DD; /* Warna pada button */
+    color: white; /* Warna teks putih agar kontras */
+    border: none; /* Menghilangkan border */
+    padding: 8px 15px; /* Memberikan padding agar tombol lebih nyaman diklik */
+    border-radius: 5px; /* Membuat sudut tombol sedikit melengkung */
+    display: flex; /* Menggunakan flexbox untuk menyusun elemen di dalamnya */
+    align-items: center; /* Menengahkan ikon dan teks dalam tombol */
+}
+
+/* Styling untuk ikon WhatsApp */
+.whatsapp-icon {
+    width: 20px; /* Mengatur ukuran ikon WhatsApp */
+    margin-right: 8px; /* Memberikan jarak antara ikon dan teks */
+}
+
+/* Memberikan efek kegelapan pada latar belakang */
+.bg-image {
+    background: url('https://source.unsplash.com/1600x900/?technology,ai') no-repeat center center/cover;
+    /* Menggunakan gambar latar belakang yang sama seperti pada hero */
+    filter: brightness(0.3); /* Mengurangi kecerahan gambar agar teks di atasnya lebih terbaca */
+}
+
+/*LOGO PERUSAHAAN*/
+.company-logo {
+    max-width: 100px;
+    filter: grayscale(100%);
+    transition: 0.3s ease-in-out;
+}
+
+/* EFEK HOVER PADA LOGO*/
+.company-logo:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+/*KOTAK TESTIMONI*/
+.testimonial-box {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    border-radius: 0px;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.01)
+}
+
+/*KARTU KUSTOM*/
+.custom-card {
+    background: #0F1C2E; /* Warna gelap */
+    border-radius: 15px;
+    padding: 40px;
+    color: white;
+}
+
+/*TOMBOL KUSTOM*/
+.btn-custom {
+    background-color: white;
+    color: #0F1C2E;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+}
+
+/*ICON BADA TOMBOL*/
+.btn-custom i {
+    margin-right: 8px;
+}
+
+/* Styling untuk section utama */
+.custom-section {
+    background-color: #0B1F3A; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    padding: 50px; /* Padding untuk memberikan ruang */
+    border-radius: 15px; /* Membuat sudut elemen membulat */
+}
+
+/* Styling untuk tombol "Pelajari lebih lanjut" */
+.custom-btn {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.custom-btn:hover {
+    text-decoration: underline; /* Efek hover */
+}
+
+/* Styling untuk gambar agar responsif */
+.custom-image {
+    max-width: 100%;
+    border-radius: 15px; /* Membuat gambar memiliki sudut membulat */
+}
+
+.custom-shadow {
+    .custom-shadow {
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15); /* Lebih besar dan smooth */
+        border-radius: 10px; /* Agar sudutnya tetap halus */
+    }    
+}
+/* RATING */
+.bintang-container {
+    display: flex; /* Gunakan flexbox */
+    justify-content: center; /* Tengahkan secara horizontal */
+    align-items: center; /* Tengahkan secara vertikal jika ada tinggi */
+    min-height: 50hv;
+}
+
+.logo-bintang {
+    max-width: 100px; /* Atur ukuran maksimum gambar */
+    height: auto; /* Jaga proporsi gambar */
+}
+
+/* Styling teks "We're listed on" */
+.text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Styling untuk daftar platform */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+/* Styling untuk logo dan teks di sampingnya */
+.logo-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: normal; /* Pastikan font tidak bold */
+    color: #333;
+}
+
+/* Ukuran logo */
+.logo-item img {
+    height: 30px;
+    width: auto;
+}
+
+/* <!--SWIPPER STYLE-->
+    /* Styling pagination agar berbentuk garis putus-putus */
+.swiper-pagination-bullet {
+    width: 30px; /* Panjang garis */
+    height: 5px; /* Ketebalan garis */
+    background: #414141; /* Warna garis */
+    border-radius: 2px;
+    display: inline-block;
+    margin: 0 5px; /* Jarak antar garis */
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 60px;
+}
+
+/* Garis aktif berubah menjadi lebih panjang */
+.swiper-pagination-bullet-active {
+    width: 30px; /* Panjang garis aktif */
+    background: #3B82F6; /* Warna biru untuk yang aktif */
+}
+
+.solutions .card {
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.solutions .card:hover {
+    transform: translateY(-5px);
+}
+
+.solutions img {
+    max-width: 80px;
+    height: auto;
+}
+
+.solutions ul {
+    padding: 0;
+}
+
+.solutions ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
